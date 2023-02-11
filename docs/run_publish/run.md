@@ -162,6 +162,10 @@ export DB_PASS=postgres
 export DB_DATABASE=postgres
 export DB_HOST=localhost
 export DB_PORT=5432
+export DB_SSL=true
+export DB_CA_CERT=<CA.cert full path (Required if DB_SSL is true) >
+export DB_KEY_CERT=<Key.Cert full path (optional)>
+export DB_CLIENT_CERT=<Client.cert full path (optional)>
 subql-node -f your-project-path
 ```
 
