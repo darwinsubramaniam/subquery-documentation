@@ -171,6 +171,10 @@ subql-node -f your-project-path
 
 Depending on the configuration of your Postgres database (e.g. a different database password), please ensure also that both the indexer (`subql/node`) and the query service (`subql/query`) can establish a connection to it.
 
+value of DB_SSL are optional , if the postgres database was configured to be sslmode=required. The DB_CA_CERT is only required if the DB_SSL is true, it is the path to the ca certificate. 
+
+DB_KEY_CERT and DB_CLIENT_CERT are optional depending on the database configuration.
+
 #### Specify a configuration file
 
 ::: code-tabs
